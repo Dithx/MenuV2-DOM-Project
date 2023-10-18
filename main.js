@@ -157,8 +157,9 @@ function displayMenuItems(menuItems=menu){
             <div class="item-info">
                 <header>
                     <h3>${item.title}</h3>
-                    <hr>
+                    <h3>$${item.price}</h3>
                 </header>
+                    <hr>
                 <div class="item-text">
                     <p>${item.desc}</p>
                 </div>

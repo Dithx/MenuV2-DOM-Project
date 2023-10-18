@@ -22,7 +22,7 @@
 
 .menu-item{
     display: flex;
-    max-width: 700px;
+    max-width: 550px;
     height: auto;
     /* background-color: aliceblue; */
     border-radius: 20px;
@@ -31,10 +31,14 @@
     padding: 0 2em;
 }
 
+.menu-item{
+    /* width: 600px; */
+}
+
 .menu-item img{
-    width: 250px;
+    width: 200px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .item-info{
@@ -45,9 +49,19 @@
 
 .item-info header{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 0.5em 0;
     text-transform: capitalize;
+    color: #212529;
+}
+
+.item-info header h3:nth-child(2){
+    color: #40916c;
+}
+
+.item-info p{
+    font-size: 0.9em;
+    opacity: 0.8;
 }
 
 .btn-container{
@@ -63,7 +77,7 @@
     text-transform: capitalize;
     cursor: pointer;
 }
-@media (max-width: 1100px){
+@media (max-width: 1150px){
     .menu-container{
         grid-template-columns: repeat(1,1fr);
     }
@@ -87,10 +101,14 @@
     
     .menu-item{
         flex-direction: column;
-        max-width: 500px;
+        max-width: 400px;
         gap: 1em;
     }
-
+    
+    .menu-item img{
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -98,16 +116,16 @@
         justify-content: center;
         padding: 3em 0;
     }
-
     .btn-container{
         max-width: 100vw;
+        padding: 0 1em;
     }
     
     .filter-btn{
         font-size: 3vw;
-
+        
     }
-
+    
     .item-info p{
         font-size: 3.5vw;
         opacity: 0.8;
